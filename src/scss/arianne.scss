@@ -1,13 +1,13 @@
 @import './vars';
 
 .arianne {
+    @include box-shadow();
     background-color: $color-main;
     border: none;
     border-radius: 0;
     width: 100%;
     height: auto;
     position: initial;
-    box-shadow: $box-shadow;
 
     li {
         background: none;

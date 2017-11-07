@@ -5,16 +5,32 @@
 
         .colLeft,
         .colRight {
+            @include box-shadow();
+            @include form();
+
             width: 49%;
             padding: 0;
             float: left;
-
             border: 0;
             border-radius: 0;
-            box-shadow: $box-shadow;
+            padding-bottom: 20px;
 
             &.colLeft {
                 margin-right: 1%;
+            }
+
+            @media (max-width: $res-small-device) {
+                width: 100%;
+                padding: 0;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                float: none;
+                clear: both;
+
+                &.colLeft {
+                    margin-right: 0;
+                }
+
             }
 
             .sstitle {
@@ -23,24 +39,29 @@
                 font-weight: normal;
             }
 
-            .formrow {
-                margin: 0 10px 10px 10px;
-                display: block;
-                width: 100%;
+            #add_new_brand {
+                @include button();
+            }
 
-                label {
-                    width: 30%;
-                    color: $color-main;
-                    font-weight: normal;
+            #add_taw,
+            #add_tap,
+            #type_attribute_weights .remove_standard_weight,
+            #type_attribute_weights .remove_type_attribute_weight,
+            #type_attribute_prices .remove_normal_price,
+            #type_attribute_prices .remove_type_attribute_price {
+                @include small-button();
+
+                @media (max-width: $res-small-device) {
+                    position: initial;
                 }
+            }
 
-                input {
-                    background-color: transparent;
-                    border: none;
-                    border-bottom: 1px solid #9e9e9e;
-                    border-radius: 0;
-                    outline: none;
-                    padding: 0;
+            #result {
+                color: $color-main;
+                background-color: $color-main;
+
+                &, #discount_price, #id_discount_price_marker {
+                    color: black;
                 }
             }
         }
