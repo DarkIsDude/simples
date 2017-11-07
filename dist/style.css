@@ -1,0 +1,470 @@
+#header {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  background-color: #ffa726;
+  border: 0;
+  color: wite; }
+  @media (max-width: 1024px) {
+    #header #nav #brand_ico, #header #nav #brand_ico img {
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: initial; } }
+  #header #welcome,
+  #header #userName {
+    color: white; }
+  #header #logout {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    background: none;
+    background-color: #ffa726;
+    border-radius: 0;
+    border: 0;
+    color: white;
+    text-align: center;
+    padding: 0 10px 0 10px;
+    margin: 0;
+    height: 25px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 25px;
+    background-color: white;
+    color: #ffa726; }
+
+#title span {
+  display: none; }
+
+#title h2 {
+  float: right;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  background: none;
+  background-color: #ffa726;
+  border-radius: 0;
+  border: 0;
+  color: white;
+  text-align: center;
+  padding: 0 10px 0 10px;
+  margin: 0;
+  height: 25px;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 25px;
+  width: auto;
+  padding: 10px;
+  height: auto; }
+  @media (max-width: 1024px) {
+    #title h2 {
+      width: 100%; } }
+.arianne {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  background-color: #ffa726;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  height: auto;
+  position: initial;
+  line-height: 50px; }
+  .arianne li {
+    background: none;
+    position: initial;
+    display: inline-block;
+    padding: 5px;
+    height: auto; }
+    @media (max-width: 1024px) {
+      .arianne li {
+        display: block; } }
+    .arianne li, .arianne li a, .arianne li span {
+      color: rgba(255, 255, 255, 0.5) !important; }
+    .arianne li:after {
+      color: rgba(255, 255, 255, 0.5) !important;
+      padding-left: 15px; }
+    .arianne li:not(:last-child):after {
+      content: ">"; }
+    .arianne li.on {
+      background-color: transparent; }
+      .arianne li.on, .arianne li.on a, .arianne li.on span {
+        color: white !important; }
+#main_form {
+  clear: both;
+  padding-top: 20px; }
+  #main_form > fieldset .colLeft,
+  #main_form > fieldset .colRight {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    width: 49%;
+    padding: 0;
+    float: left;
+    border: 0;
+    border-radius: 0;
+    padding-bottom: 20px;
+    /** **********************
+     * Button management
+     ********************** */
+    /** **********************
+     * Special block
+     ********************** */
+    /** **********************
+     * Upload file mangement
+     ********************** */ }
+    #main_form > fieldset .colLeft .formrow,
+    #main_form > fieldset .colRight .formrow {
+      margin: 0 10px 10px 10px;
+      display: block;
+      width: 100%;
+      clear: both; }
+      #main_form > fieldset .colLeft .formrow *,
+      #main_form > fieldset .colRight .formrow * {
+        line-height: 25px; }
+        #main_form > fieldset .colLeft .formrow * .raw,
+        #main_form > fieldset .colRight .formrow * .raw {
+          line-height: 20px; }
+      #main_form > fieldset .colLeft .formrow.marge,
+      #main_form > fieldset .colRight .formrow.marge {
+        margin-bottom: 50px; }
+      #main_form > fieldset .colLeft .formrow > span > span > span > label,
+      #main_form > fieldset .colRight .formrow > span > span > span > label {
+        display: none; }
+    #main_form > fieldset .colLeft label,
+    #main_form > fieldset .colLeft input,
+    #main_form > fieldset .colLeft select,
+    #main_form > fieldset .colLeft textarea,
+    #main_form > fieldset .colLeft span,
+    #main_form > fieldset .colLeft .contForm,
+    #main_form > fieldset .colRight label,
+    #main_form > fieldset .colRight input,
+    #main_form > fieldset .colRight select,
+    #main_form > fieldset .colRight textarea,
+    #main_form > fieldset .colRight span,
+    #main_form > fieldset .colRight .contForm {
+      display: inline-block;
+      float: none;
+      clear: both; }
+    #main_form > fieldset .colLeft label,
+    #main_form > fieldset .colRight label {
+      width: 30%;
+      color: #ffa726;
+      font-weight: normal;
+      line-height: 25px; }
+      @media (max-width: 1024px) {
+        #main_form > fieldset .colLeft label,
+        #main_form > fieldset .colRight label {
+          display: block;
+          width: 100%; } }
+    #main_form > fieldset .colLeft input,
+    #main_form > fieldset .colRight input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid black;
+      border-radius: 0;
+      outline: none;
+      padding: 0;
+      height: 25px;
+      outline: none; }
+      #main_form > fieldset .colLeft input[disabled],
+      #main_form > fieldset .colRight input[disabled] {
+        color: grey;
+        border-bottom: 1px solid grey; }
+      #main_form > fieldset .colLeft input:focus,
+      #main_form > fieldset .colRight input:focus {
+        border-bottom: 1px solid #ffa726; }
+    #main_form > fieldset .colLeft select,
+    #main_form > fieldset .colRight select {
+      display: inline-block;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid black;
+      border-radius: 0;
+      outline: none;
+      padding: 0;
+      height: 25px;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%; }
+      #main_form > fieldset .colLeft select[disabled],
+      #main_form > fieldset .colRight select[disabled] {
+        color: grey;
+        border-bottom: 1px solid grey; }
+      #main_form > fieldset .colLeft select:focus,
+      #main_form > fieldset .colRight select:focus {
+        border-bottom: 1px solid #ffa726; }
+    #main_form > fieldset .colLeft .helptext,
+    #main_form > fieldset .colRight .helptext {
+      color: #ffa726;
+      font-weight: bold; }
+    #main_form > fieldset .colLeft textarea,
+    #main_form > fieldset .colRight textarea {
+      width: 90%;
+      display: block; }
+    #main_form > fieldset .colLeft.colLeft,
+    #main_form > fieldset .colRight.colLeft {
+      margin-right: 1%; }
+    @media (max-width: 1024px) {
+      #main_form > fieldset .colLeft,
+      #main_form > fieldset .colRight {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        float: none;
+        clear: both; }
+        #main_form > fieldset .colLeft.colLeft,
+        #main_form > fieldset .colRight.colLeft {
+          margin-right: 0; } }
+    #main_form > fieldset .colLeft .sstitle,
+    #main_form > fieldset .colRight .sstitle {
+      background-color: #ffa726;
+      color: white;
+      font-weight: normal;
+      height: 50px;
+      line-height: 50px; }
+    #main_form > fieldset .colLeft #add_new_brand,
+    #main_form > fieldset .colRight #add_new_brand {
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+      background: none;
+      background-color: #ffa726;
+      border-radius: 0;
+      border: 0;
+      color: white;
+      text-align: center;
+      padding: 0 10px 0 10px;
+      margin: 0;
+      height: 25px;
+      vertical-align: middle;
+      display: inline-block;
+      line-height: 25px; }
+    #main_form > fieldset .colLeft #add_taw,
+    #main_form > fieldset .colLeft #add_tap,
+    #main_form > fieldset .colLeft #type_attribute_weights .remove_standard_weight,
+    #main_form > fieldset .colLeft #type_attribute_weights .remove_type_attribute_weight,
+    #main_form > fieldset .colLeft #type_attribute_prices .remove_normal_price,
+    #main_form > fieldset .colLeft #type_attribute_prices .remove_type_attribute_price,
+    #main_form > fieldset .colRight #add_taw,
+    #main_form > fieldset .colRight #add_tap,
+    #main_form > fieldset .colRight #type_attribute_weights .remove_standard_weight,
+    #main_form > fieldset .colRight #type_attribute_weights .remove_type_attribute_weight,
+    #main_form > fieldset .colRight #type_attribute_prices .remove_normal_price,
+    #main_form > fieldset .colRight #type_attribute_prices .remove_type_attribute_price {
+      width: 20px;
+      height: 20px;
+      line-height: 12px;
+      padding: 1px;
+      top: 0;
+      left: -30px;
+      right: initial;
+      margin: 0; }
+      @media (max-width: 1024px) {
+        #main_form > fieldset .colLeft #add_taw,
+        #main_form > fieldset .colLeft #add_tap,
+        #main_form > fieldset .colLeft #type_attribute_weights .remove_standard_weight,
+        #main_form > fieldset .colLeft #type_attribute_weights .remove_type_attribute_weight,
+        #main_form > fieldset .colLeft #type_attribute_prices .remove_normal_price,
+        #main_form > fieldset .colLeft #type_attribute_prices .remove_type_attribute_price,
+        #main_form > fieldset .colRight #add_taw,
+        #main_form > fieldset .colRight #add_tap,
+        #main_form > fieldset .colRight #type_attribute_weights .remove_standard_weight,
+        #main_form > fieldset .colRight #type_attribute_weights .remove_type_attribute_weight,
+        #main_form > fieldset .colRight #type_attribute_prices .remove_normal_price,
+        #main_form > fieldset .colRight #type_attribute_prices .remove_type_attribute_price {
+          position: initial; } }
+    #main_form > fieldset .colLeft #add_taw,
+    #main_form > fieldset .colLeft #add_tap,
+    #main_form > fieldset .colRight #add_taw,
+    #main_form > fieldset .colRight #add_tap {
+      top: 0; }
+    #main_form > fieldset .colLeft #type_attribute_weights .remove_standard_weight,
+    #main_form > fieldset .colLeft #type_attribute_weights .remove_type_attribute_weight,
+    #main_form > fieldset .colLeft #type_attribute_prices .remove_normal_price,
+    #main_form > fieldset .colLeft #type_attribute_prices .remove_type_attribute_price,
+    #main_form > fieldset .colRight #type_attribute_weights .remove_standard_weight,
+    #main_form > fieldset .colRight #type_attribute_weights .remove_type_attribute_weight,
+    #main_form > fieldset .colRight #type_attribute_prices .remove_normal_price,
+    #main_form > fieldset .colRight #type_attribute_prices .remove_type_attribute_price {
+      top: 30px; }
+    #main_form > fieldset .colLeft .standard_weight_form,
+    #main_form > fieldset .colLeft .normal_price_form,
+    #main_form > fieldset .colRight .standard_weight_form,
+    #main_form > fieldset .colRight .normal_price_form {
+      margin-top: 10px; }
+    #main_form > fieldset .colLeft #result,
+    #main_form > fieldset .colRight #result {
+      display: block;
+      color: #ffa726;
+      background-color: #ffa726; }
+      #main_form > fieldset .colLeft #result, #main_form > fieldset .colLeft #result #discount_price, #main_form > fieldset .colLeft #result #id_discount_price_marker,
+      #main_form > fieldset .colRight #result,
+      #main_form > fieldset .colRight #result #discount_price,
+      #main_form > fieldset .colRight #result #id_discount_price_marker {
+        color: black; }
+    #main_form > fieldset .colLeft #upload-coverfile,
+    #main_form > fieldset .colLeft #upload-coverfile div,
+    #main_form > fieldset .colRight #upload-coverfile,
+    #main_form > fieldset .colRight #upload-coverfile div {
+      height: auto;
+      width: auto;
+      display: initial;
+      padding: 0; }
+    #main_form > fieldset .colLeft #upload-coverfile,
+    #main_form > fieldset .colRight #upload-coverfile {
+      padding: 10px; }
+      @media (max-width: 1024px) {
+        #main_form > fieldset .colLeft #upload-coverfile,
+        #main_form > fieldset .colRight #upload-coverfile {
+          display: block;
+          float: none;
+          width: 90%; } }
+  #main_form > fieldset #blocProd {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    clear: both;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    padding: 0; }
+    #main_form > fieldset #blocProd .formrow {
+      margin: 0 10px 10px 10px;
+      display: block;
+      width: 100%;
+      clear: both; }
+      #main_form > fieldset #blocProd .formrow * {
+        line-height: 25px; }
+        #main_form > fieldset #blocProd .formrow * .raw {
+          line-height: 20px; }
+      #main_form > fieldset #blocProd .formrow.marge {
+        margin-bottom: 50px; }
+      #main_form > fieldset #blocProd .formrow > span > span > span > label {
+        display: none; }
+    #main_form > fieldset #blocProd label,
+    #main_form > fieldset #blocProd input,
+    #main_form > fieldset #blocProd select,
+    #main_form > fieldset #blocProd textarea,
+    #main_form > fieldset #blocProd span,
+    #main_form > fieldset #blocProd .contForm {
+      display: inline-block;
+      float: none;
+      clear: both; }
+    #main_form > fieldset #blocProd label {
+      width: 30%;
+      color: #ffa726;
+      font-weight: normal;
+      line-height: 25px; }
+      @media (max-width: 1024px) {
+        #main_form > fieldset #blocProd label {
+          display: block;
+          width: 100%; } }
+    #main_form > fieldset #blocProd input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid black;
+      border-radius: 0;
+      outline: none;
+      padding: 0;
+      height: 25px;
+      outline: none; }
+      #main_form > fieldset #blocProd input[disabled] {
+        color: grey;
+        border-bottom: 1px solid grey; }
+      #main_form > fieldset #blocProd input:focus {
+        border-bottom: 1px solid #ffa726; }
+    #main_form > fieldset #blocProd select {
+      display: inline-block;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid black;
+      border-radius: 0;
+      outline: none;
+      padding: 0;
+      height: 25px;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%; }
+      #main_form > fieldset #blocProd select[disabled] {
+        color: grey;
+        border-bottom: 1px solid grey; }
+      #main_form > fieldset #blocProd select:focus {
+        border-bottom: 1px solid #ffa726; }
+    #main_form > fieldset #blocProd .helptext {
+      color: #ffa726;
+      font-weight: bold; }
+    #main_form > fieldset #blocProd textarea {
+      width: 90%;
+      display: block; }
+    #main_form > fieldset #blocProd .tabs-header {
+      background: none;
+      padding: 0;
+      margin: 0;
+      border: 0;
+      background-color: #ffa726;
+      color: white;
+      font-weight: normal;
+      border-radius: 0;
+      height: 50px;
+      line-height: 50px;
+      overflow-x: scroll;
+      width: 100%;
+      white-space: nowrap; }
+      @media (max-width: 1024px) {
+        #main_form > fieldset #blocProd .tabs-header {
+          height: auto; } }
+      #main_form > fieldset #blocProd .tabs-header .ui-state-default {
+        padding: 0;
+        margin: 0;
+        height: auto;
+        border: 0;
+        background: none; }
+        @media (max-width: 1024px) {
+          #main_form > fieldset #blocProd .tabs-header .ui-state-default {
+            display: block;
+            clear: both;
+            float: none;
+            text-align: center; } }
+        #main_form > fieldset #blocProd .tabs-header .ui-state-default a {
+          color: rgba(255, 255, 255, 0.6);
+          padding: 0;
+          padding-right: 20px;
+          padding-left: 20px;
+          border-right: 1px solid white; }
+          @media (max-width: 1024px) {
+            #main_form > fieldset #blocProd .tabs-header .ui-state-default a {
+              padding-right: 10px;
+              padding-left: 10px;
+              border: 0;
+              display: block;
+              width: 100%;
+              border-bottom: 1px solid white;
+              text-align: center; } }
+        #main_form > fieldset #blocProd .tabs-header .ui-state-default.ui-state-active a, #main_form > fieldset #blocProd .tabs-header .ui-state-default.ui-state-hover a {
+          color: white;
+          text-align: center; }
+    #main_form > fieldset #blocProd .btn.valider.add_ba {
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+      background: none;
+      background-color: #ffa726;
+      border-radius: 0;
+      border: 0;
+      color: white;
+      text-align: center;
+      padding: 0 10px 0 10px;
+      margin: 0;
+      height: 25px;
+      vertical-align: middle;
+      display: inline-block;
+      line-height: 25px; }
+    #main_form > fieldset #blocProd .visuelProd .title {
+      line-height: inherit; }
+  #main_form #btn_cancel,
+  #main_form > input.btn.select {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    background: none;
+    background-color: #ffa726;
+    border-radius: 0;
+    border: 0;
+    color: white;
+    text-align: center;
+    padding: 0 10px 0 10px;
+    margin: 0;
+    height: 25px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 25px;
+    margin: 20px; }

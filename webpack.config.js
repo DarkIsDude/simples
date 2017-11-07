@@ -26,8 +26,8 @@ module.exports = {
     module: {
         rules: [{
             test: /\.scss$/,
-            use: [{ loader: "style-loader" }, { loader: "css-loader" }, { loader: "sass-loader" }]
-            //use: extractCSS.extract({ use: [ { loader: "css-loader" }, { loader: "sass-loader" } ] })
+            //use: [{ loader: "style-loader" }, { loader: "css-loader" }, { loader: "sass-loader" }]
+            use: extractCSS.extract({ use: [ { loader: "css-loader" }, { loader: "sass-loader" } ] })
         }]
     }
   };
