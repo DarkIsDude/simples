@@ -1,9 +1,6 @@
-$color-main: #ee6e73;
+$color-main: #ffa726;
 $color-grey: grey;
-
-
 $element-height: 25px;
-
 $res-small-device: 600px;
 
 @mixin box-shadow() {
@@ -52,76 +49,85 @@ $res-small-device: 600px;
             margin-bottom: 50px;
         }
 
-        label,
-        input,
-        select,
-        textarea,
-        span,
-        .contForm {
-            display: inline-block;
-            float: none;
-            clear: both;
+        > span > span > span > label {
+            display: none;
+        }
+    }
+
+    label,
+    input,
+    select,
+    textarea,
+    span,
+    .contForm {
+        display: inline-block;
+        float: none;
+        clear: both;
+    }
+
+    label {
+        width: 30%;
+        color: $color-main;
+        font-weight: normal;
+        line-height: $element-height;
+
+        @media (max-width: $res-small-device) {
+            display: block;
+        }
+    }
+
+    input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid black;
+        border-radius: 0;
+        outline: none;
+        padding: 0;
+        height: $element-height;
+        outline: none;
+
+        &[disabled] {
+            color: $color-grey;
+            border-bottom: 1px solid $color-grey;
         }
 
-        label {
-            width: 30%;
-            color: $color-main;
-            font-weight: normal;
-            line-height: $element-height;
+        &:focus {
+            border-bottom: 1px solid $color-main;
+        }
+    }
 
-            @media (max-width: $res-small-device) {
-                display: block;
-            }
+    select {
+        display: inline-block;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid black;
+        border-radius: 0;
+        outline: none;
+        padding: 0;
+        height: $element-height;
+
+        background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+
+        &[disabled] {
+            color: $color-grey;
+            border-bottom: 1px solid $color-grey;
         }
 
-        input {
-            background-color: transparent;
-            border: none;
-            border-bottom: 1px solid black;
-            border-radius: 0;
-            outline: none;
-            padding: 0;
-            height: $element-height;
-            outline: none;
-
-            &[disabled] {
-                color: $color-grey;
-                border-bottom: 1px solid $color-grey;
-            }
-
-            &:focus {
-                border-bottom: 1px solid $color-main;
-            }
+        &:focus {
+            border-bottom: 1px solid $color-main;
         }
+    }
 
-        select {
-            display: inline-block;
-            background-color: transparent;
-            border: none;
-            border-bottom: 1px solid black;
-            border-radius: 0;
-            outline: none;
-            padding: 0;
-            height: $element-height;
+    .helptext {
+        color: $color-main;
+        font-weight: bold;
+    }
 
-            background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%;
-            -moz-appearance: none;
-            -webkit-appearance: none;
-            appearance: none;
-
-            &[disabled] {
-                color: $color-grey;
-                border-bottom: 1px solid $color-grey;
-            }
-
-            &:focus {
-                border-bottom: 1px solid $color-main;
-            }
-        }
-
-        .helptext {
-            color: $color-main;
-            font-weight: bold;
-        }
+    textarea {
+        width: 90%;
+        display: block;
     }
 }

@@ -8,6 +8,8 @@
     width: 100%;
     height: auto;
     position: initial;
+    height: $element-height * 2;
+    line-height: $element-height * 2;
 
     li {
         background: none;

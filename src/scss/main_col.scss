@@ -1,0 +1,113 @@
+.colLeft,
+.colRight {
+    @include box-shadow();
+    @include form();
+
+    width: 49%;
+    padding: 0;
+    float: left;
+    border: 0;
+    border-radius: 0;
+    padding-bottom: 20px;
+
+    &.colLeft {
+        margin-right: 1%;
+    }
+
+    @media (max-width: $res-small-device) {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        float: none;
+        clear: both;
+
+        &.colLeft {
+            margin-right: 0;
+        }
+
+    }
+
+    .sstitle {
+        background-color: $color-main;
+        color: white;
+        font-weight: normal;
+        height: $element-height * 2;
+        line-height: $element-height * 2;
+    }
+
+    /** **********************
+     * Button management
+     ********************** */
+    #add_new_brand {
+        @include button();
+    }
+
+    #add_taw,
+    #add_tap,
+    #type_attribute_weights .remove_standard_weight,
+    #type_attribute_weights .remove_type_attribute_weight,
+    #type_attribute_prices .remove_normal_price,
+    #type_attribute_prices .remove_type_attribute_price {
+        @include small-button();
+        top: 0;
+        left: -30px;
+        right: initial;
+        margin: 0;
+
+        @media (max-width: $res-small-device) {
+            position: initial;
+        }
+    }
+
+    #add_taw,
+    #add_tap, {
+        top: 0;
+    }
+
+    #type_attribute_weights .remove_standard_weight,
+    #type_attribute_weights .remove_type_attribute_weight,
+    #type_attribute_prices .remove_normal_price,
+    #type_attribute_prices .remove_type_attribute_price {
+        top: 30px;
+    }
+
+    .standard_weight_form,
+    .normal_price_form {
+        margin-top: 10px;
+    }
+
+    /** **********************
+     * Special block
+     ********************** */
+    #result {
+        display: block;
+        color: $color-main;
+        background-color: $color-main;
+
+        &, #discount_price, #id_discount_price_marker {
+            color: black;
+        }
+    }
+
+    /** **********************
+     * Upload file mangement
+     ********************** */
+    #upload-coverfile,
+    #upload-coverfile div {
+        height: auto;
+        width: auto;
+        display: initial;
+        padding: 0;
+    }
+
+    #upload-coverfile {
+        padding: 10px;
+
+        @media (max-width: $res-small-device) {
+            display: block;
+            float: none;
+            width: 90%;
+        }
+    }
+}
