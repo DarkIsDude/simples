@@ -1,0 +1,37 @@
+@import './vars';
+
+.arianne {
+    background-color: $color-main;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+    position: initial;
+    box-shadow: $box-shadow;
+
+    li {
+        background: none;
+        position: initial;
+        display: inline-block;
+        padding: 5px;
+        height: auto;
+
+        &, a, span {
+            color: rgba(255, 255, 255, 0.5) !important;
+        }
+
+        &:after {
+            color: rgba(255, 255, 255, 0.5) !important;
+            padding-left: 15px;
+            content: ">";
+        }
+
+        &.on {
+            background-color: transparent;
+
+            &, a, span {
+                color: white !important;
+            }
+        }
+    }
+}

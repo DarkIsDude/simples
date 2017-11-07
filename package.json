@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "test",
   "scripts": {
-    "build": "webpack-dev-server"
+    "build": "webpack",
+    "serve": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",

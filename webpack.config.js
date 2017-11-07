@@ -1,18 +1,22 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
     watch: true,
-    entry: [
-        path.resolve('./my.scss'),
-        path.resolve('my.js')
-    ],
+    entry: path.resolve('./src/my.js'),
     output: {
-        filename: 'bundle.js'
+        path: path.resolve('./', 'dist'),
+        filename: 'bundle.js',
+        publicPath: '/dist/'
     },
     devServer: {
         hot: true,
         contentBase: path.resolve('./'),
+        inline: true,
     },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ],
     module: {
         rules: [{
             test: /\.scss$/,

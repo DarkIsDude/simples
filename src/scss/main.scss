@@ -1,0 +1,53 @@
+@import './vars';
+
+#main_form {
+    > fieldset {
+
+        .colLeft,
+        .colRight {
+            width: 49%;
+            padding: 0;
+            float: left;
+
+            border: 0;
+            border-radius: 0;
+            box-shadow: $box-shadow;
+
+            &.colLeft {
+                margin-right: 1%;
+            }
+
+            .sstitle {
+                background-color: $color-main;
+                color: white;
+                font-weight: normal;
+            }
+
+            .formrow {
+                margin: 0 10px 10px 10px;
+                display: block;
+                width: 100%;
+
+                label {
+                    width: 30%;
+                    color: $color-main;
+                    font-weight: normal;
+                }
+
+                input {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid #9e9e9e;
+                    border-radius: 0;
+                    outline: none;
+                    padding: 0;
+                }
+            }
+        }
+
+        #blocProd {
+            clear: both;
+            width: 100%;
+        }
+    }
+}
