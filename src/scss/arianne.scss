@@ -8,7 +8,6 @@
     width: 100%;
     height: auto;
     position: initial;
-    height: $element-height * 2;
     line-height: $element-height * 2;
 
     li {
@@ -29,6 +28,9 @@
         &:after {
             color: rgba(255, 255, 255, 0.5) !important;
             padding-left: 15px;
+        }
+
+        &:not(:last-child):after {
             content: ">";
         }
 
