@@ -1,0 +1,17 @@
+@import './vars';
+
+#main_form {
+    clear: both;
+    padding-top: 20px;
+
+    > fieldset {
+        @import './main_col';
+        @import './main_prod';
+    }
+
+    #btn_cancel,
+    > input.btn.select {
+        @include button();
+        margin: 20px;
+    }
+}

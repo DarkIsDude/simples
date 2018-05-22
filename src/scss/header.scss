@@ -1,0 +1,52 @@
+@import './vars';
+
+#header {
+    @include box-shadow();
+    background-color: $color-main;
+    border: 0;
+    color: wite;
+
+    #nav {
+        #brand_ico {
+            @media (max-width: $res-small-device) {
+                &, img {
+                    height: 50px;
+                    width: 50px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    left: initial;
+                }
+            }
+        }
+    }
+
+    #welcome,
+    #userName {
+        color: white;
+    }
+
+    #logout {
+        @include button();
+        background-color: white;
+        color: $color-main;
+    }
+}
+
+#title {
+    span {
+        display: none;
+    }
+
+    h2 {
+        float: right;
+        @include button();
+        width: auto;
+        padding: 10px;
+        height: auto;
+
+        @media (max-width: $res-small-device) {
+            width: 100%;
+        }
+    }
+}

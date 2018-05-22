@@ -1,0 +1,80 @@
+#blocProd {
+    @include box-shadow();
+    @include form();
+
+    clear: both;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    padding: 0;
+
+    .tabs-header {
+        background: none;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        background-color: $color-main;
+        color: white;
+        font-weight: normal;
+        border-radius: 0;
+        height: $element-height * 2;
+        line-height: $element-height * 2;
+        overflow-x: scroll;
+        width: 100%;
+        white-space: nowrap;
+
+        @media (max-width: $res-small-device) {
+            height: auto;
+        }
+
+        .ui-state-default {
+            padding: 0;
+            margin: 0;
+            height: auto;
+            border: 0;
+            background: none;
+
+            @media (max-width: $res-small-device) {
+                display: block;
+                clear: both;
+                float: none;
+                text-align: center;
+            }
+
+            a {
+                color: rgba(255, 255, 255, 0.6);
+                padding: 0;
+                padding-right: 20px;
+                padding-left: 20px;
+                border-right: 1px solid white;
+
+                @media (max-width: $res-small-device) {
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    border: 0;
+                    display: block;
+                    width: 100%;
+                    border-bottom: 1px solid white;
+                    text-align: center;
+                }
+            }
+
+            &.ui-state-active,
+            &.ui-state-hover {
+                a {
+                    color: white;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .btn.valider.add_ba {
+        @include button();
+    }
+
+    .visuelProd .title {
+        line-height: inherit;
+    }
+}
